@@ -1,16 +1,16 @@
 # pip install valclient 1st
 
 from valclient.client import Client
-from agent import Agent
+import json
 
-agent = Agent()
-
-client = Client(region="ap")
+client = Client()
+client = Client(region='eu')
 client.activate()
+with open('agents.json','r') as f:
+    data = json.load(f)
+    
+agent = str(input('Agent name (Cap sensitive): '))
 
-# get MatchID of current game
+agentt = data[agent]
 
-matchID = client.pregame_fetch_player()["MatchID"]
-
-agentLock = client.pregame_lock_character(
-    agent.Gekko(), match_id=matchID)
+client.pregame_lock_character(agent_id=agentt)
