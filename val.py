@@ -4,7 +4,7 @@ from valclient.client import Client
 import json
 
 client = Client()
-client = Client(region='eu')
+client = Client(region='ap')
 client.activate()
 with open('agents.json','r') as f:
     data = json.load(f)
