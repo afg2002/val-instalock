@@ -4,6 +4,19 @@ GUI web **lokal dan ringan** untuk memilih agent VALORANT. Python + HTML/CSS/Jav
 
 > Proyek komunitas, tidak berafiliasi dengan Riot Games. Lock tidak dijamin berhasil. Gunakan dengan mempertimbangkan aturan game dan kenyamanan sesama pemain.
 
+## Cuplikan dashboard
+
+![Dashboard VAL Instalock: katalog 30 agent, filter role, pilihan Hush, region AP, dan kontrol mode demo](docs/screenshots/dashboard-desktop.png)
+
+<details>
+<summary><strong>Lihat tampilan mobile</strong></summary>
+
+<img src="docs/screenshots/dashboard-mobile.png" alt="Tampilan mobile VAL Instalock dengan pencarian, filter role, kartu agent, dan pintasan Atur dan mulai" width="320">
+
+</details>
+
+Screenshot diambil langsung dari GUI dalam **mode demo**, bukan mockup. Tema gelap, kartu agent, panel pilihan, dan kontrol mulai/berhenti tersedia tanpa Electron. Pada layar kecil, pintasan **Atur & mulai** membawa pengguna ke kontrol agent yang dipilih.
+
 ## Jalankan di Windows
 
 1. Pasang **Python 3.10 atau lebih baru** dari [python.org](https://www.python.org/downloads/). Saat instalasi, centang **Add Python to PATH**.
@@ -95,6 +108,7 @@ static/
   assets/agents/          30 potret WebP lokal (~1,5 MB total)
   assets/fonts/           Font lokal dan lisensi SIL OFL
 tests/                    Unit/integration test tanpa akun Riot
+docs/screenshots/         Cuplikan dashboard desktop dan mobile
 ```
 
 API browser: `GET /api/bootstrap`, `GET /api/status`, `GET /api/catalog`, serta `POST /api/start`, `/api/stop`, `/api/refresh`. Semua POST memerlukan token CSRF dari bootstrap dan origin yang sesuai. Token ini bukan kredensial Riot.
