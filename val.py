@@ -1,16 +1,7 @@
-# pip install valclient 1st
+#!/usr/bin/env python3
+"""Run the local GUI. Use --demo to explore without a running VALORANT client."""
 
-from valclient.client import Client
-import json
+from val_instalock.server import main
 
-client = Client()
-client = Client(region='ap')
-client.activate()
-with open('agents.json','r') as f:
-    data = json.load(f)
-    
-agent = str(input('Agent name (Cap sensitive): '))
-
-agentt = data[agent]
-
-client.pregame_lock_character(agent_id=agentt)
+if __name__ == "__main__":
+    main()

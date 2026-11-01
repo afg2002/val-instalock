@@ -1,0 +1,2 @@
+# Only needed for live mode. Demo mode and tests use the standard library.
+requests>=2.32.5,<3
