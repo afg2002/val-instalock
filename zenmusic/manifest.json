@@ -1,0 +1,12 @@
+{
+  "name": "ZenMusic — Listen Freely",
+  "short_name": "ZenMusic",
+  "description": "No ads, no paywall. BitChord-inspired web player for Audius, Archive, YouTube & more. Vercel-ready.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a12",
+  "theme_color": "#8b5cf6",
+  "icons": [
+    { "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='40' fill='%238b5cf6'/%3E%3Cpath d='M96 48a6 6 0 0 0-6 6v72a12 12 0 1 0 6 0V54a6 6 0 0 0-6-6Zm24 20a6 6 0 0 0-6 6v44a10 10 0 1 0 6 0V74a6 6 0 0 0-6-6Z' fill='white'/%3E%3C/svg%3E", "sizes": "192x192", "type": "image/svg+xml" }
+  ]
+}

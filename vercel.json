@@ -1,0 +1,7 @@
+{
+  "buildCommand": "npm run build --prefix zenmusic",
+  "outputDirectory": "zenmusic/dist",
+  "installCommand": "npm install --prefix zenmusic",
+  "framework": "vite",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
